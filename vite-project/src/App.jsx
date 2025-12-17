@@ -52,7 +52,13 @@ const epost = () => {
 
   return (
     <>
-      
+    <BrowserRouter>
+    <Routes>
+      <Route path="/" element/>
+      <Route/>
+      <Route/>
+    </Routes>
+    </BrowserRouter>
     </>
   )
 }
