@@ -8,27 +8,35 @@ export const Epage = () => {
 
   const handleUpdate = (e) => {
     e.preventDefault();
-    epost(poste);
+    epost(poste); // Update the main data array
     navigate('/');
   };
 
   return (
     <main>
-      <h2>Edit Post</h2>
+      <h2>Edit: {poste.name}</h2>
       <form onSubmit={handleUpdate}>
+        <label>Name:</label>
         <input 
-          type="text" value={poste.name} 
+          value={poste.name} 
           onChange={(e) => setPoste({...poste, name: e.target.value})} 
         />
+        
+        <label>Count:</label>
+        <input 
+          type="number" 
+          value={poste.count} 
+          onChange={(e) => setPoste({...poste, count: e.target.value})} 
+        />
+
+        <label>Description:</label>
         <textarea 
           value={poste.description} 
           onChange={(e) => setPoste({...poste, description: e.target.value})} 
         />
-        <input 
-          type="number" value={poste.count} 
-          onChange={(e) => setPoste({...poste, count: e.target.value})} 
-        />
-        <button type="submit">Update Post</button>
+
+        <button type="submit">Update Changes</button>
+        <button type="button" onClick={() => navigate('/')}>Cancel</button>
       </form>
     </main>
   );

@@ -6,32 +6,38 @@ export const Ppage = () => {
   const { post, setPost, posting } = useContext(DataContext);
   const navigate = useNavigate();
 
-  const handleSubmit = (e) => {
+  const handleCreate = (e) => {
     e.preventDefault();
-    const id = Date.now();
-    const newEntry = { id, name: post.name, description: post.description, count: post.count };
+    const newEntry = { 
+        ...post, 
+        id: Date.now() // Assign unique ID
+    };
     posting(newEntry);
-    setPost({ name: '', description: '', count: 0 }); // Reset form
+    setPost({ name: '', description: '', count: 0 }); // Clear form
     navigate('/');
   };
 
   return (
     <main>
       <h2>Add New Post</h2>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleCreate}>
         <input 
-          type="text" placeholder="Name" required
-          value={post.name} onChange={(e) => setPost({...post, name: e.target.value})} 
+          placeholder="Name" 
+          value={post.name} 
+          onChange={(e) => setPost({...post, name: e.target.value})} 
+        />
+        <input 
+          placeholder="Count" type="number"
+          value={post.count} 
+          onChange={(e) => setPost({...post, count: e.target.value})} 
         />
         <textarea 
-          placeholder="Description" required
-          value={post.description} onChange={(e) => setPost({...post, description: e.target.value})} 
+          placeholder="Description" 
+          value={post.description} 
+          onChange={(e) => setPost({...post, description: e.target.value})} 
         />
-        <input 
-          type="number" placeholder="Count" required
-          value={post.count} onChange={(e) => setPost({...post, count: e.target.value})} 
-        />
-        <button type="submit">Submit</button>
+        <button type="submit">Save Post</button>
+        <button type="button" onClick={() => navigate('/')}>Cancel</button>
       </form>
     </main>
   );
