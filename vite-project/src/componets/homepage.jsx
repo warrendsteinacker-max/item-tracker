@@ -7,32 +7,32 @@ export const Home = () => {
   const { searchResults, setPoste, del } = useContext(DataContext);
   const navigate = useNavigate();
 
-  const goToEdit = (item) => {
-    setPoste(item); // Load this item into the 'poste' state
-    navigate('/epage'); // Move to edit page
+  const handleEdit = (item) => {
+    setPoste(item); // Load the global 'poste' state
+    navigate('/epage'); // Redirect
   };
 
   return (
-    <main>
-      <header style={{ display: 'flex', justifyContent: 'space-between', padding: '10px' }}>
-        <h1>My Inventory</h1>
-        <Link to="/ppage"><button>+ Add New Item</button></Link>
+    <main style={{ padding: '20px' }}>
+      <header style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '20px' }}>
+        <h1>Inventory</h1>
+        <Link to="/ppage"><button style={{ cursor: 'pointer' }}>+ New Item</button></Link>
       </header>
 
       <Search />
 
-      <div className="list-container">
+      <div style={{ marginTop: '20px' }}>
         {searchResults.length ? (
           searchResults.map((item) => (
-            <div key={item.id} style={{ border: '1px solid #ddd', padding: '10px', margin: '10px 0' }}>
-              <h3>{item.name} (Qty: {item.count})</h3>
+            <article key={item.id} style={{ border: '1px solid #ddd', padding: '15px', borderRadius: '8px', marginBottom: '10px' }}>
+              <h3>{item.name} <small>(Qty: {item.count})</small></h3>
               <p>{item.description}</p>
-              <button onClick={() => goToEdit(item)}>Edit</button>
-              <button onClick={() => del(item.id)} style={{ color: 'red' }}>Delete</button>
-            </div>
+              <button onClick={() => handleEdit(item)}>Edit</button>
+              <button onClick={() => del(item.id)} style={{ color: 'red', marginLeft: '10px' }}>Delete</button>
+            </article>
           ))
         ) : (
-          <p>No items found.</p>
+          <p>Nothing found. Start by adding a post!</p>
         )}
       </div>
     </main>
