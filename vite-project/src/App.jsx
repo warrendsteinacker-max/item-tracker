@@ -1,5 +1,9 @@
 import { useState, useEffect } from 'react'
 import {BrowserRouter, Route, Routes} from 'react-router-dom'
+import { Home } from './componets/homepage'
+import { Ppage } from './componets/postpage'
+import { Epage } from './componets/editpage'
+
 
 
 function App() {
