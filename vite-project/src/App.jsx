@@ -3,6 +3,7 @@ import {BrowserRouter, Route, Routes, useNavigate} from 'react-router-dom'
 import { Home } from './componets/homepage'
 import { Ppage } from './componets/postpage'
 import { Epage } from './componets/editpage'
+import { DataProvider } from './context'
 
 
 
@@ -10,6 +11,7 @@ function App() {
 
   return (
     <>
+    <DataProvider>
     <BrowserRouter>
     <Routes>
       <Route path="/" element={<Home />}/>
@@ -18,6 +20,7 @@ function App() {
       <Route path="*" element={<h1>Page not found</h1>}/>
     </Routes>
     </BrowserRouter>
+    </DataProvider>
     </>
   )
 }
