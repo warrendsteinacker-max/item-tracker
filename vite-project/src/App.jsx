@@ -29,6 +29,14 @@ const posting = () => {
 
 }
 
+const del = () => {
+
+}
+
+const epost = () => {
+  
+}
+
 
 
   return (
