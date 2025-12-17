@@ -25,8 +25,14 @@ function App() {
 
 //all good
 
-const posting = () => {
-
+const posting = (newpost) => {
+    try{
+      const allp = [...data, newpost]
+      setData(allp)
+    }
+    catch(error){
+      console.error(error.message)
+    }
 }
 
 const del = () => {
@@ -34,7 +40,7 @@ const del = () => {
 }
 
 const epost = () => {
-  
+
 }
 
 
