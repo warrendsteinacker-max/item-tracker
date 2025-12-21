@@ -45,12 +45,19 @@ h1 {
 
 input {
   font-family: inherit;
-  border: #213547;
+  border: 1px solid #213547;
 }
 
 textarea {
+  margin-top: 1000px;
   font-family: inherit;
-  border: #213547;
+  border: 1px solid #410928;
+}
+
+h2 {
+  border: 1px solid #213547;
+  font-weight: bolder;
+  font-style: italic;
 }
 
 button {
