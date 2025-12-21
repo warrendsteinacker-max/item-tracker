@@ -54,3 +54,5 @@ export const Ppage = () => {
 
 
 /////made more adjustments to css on post page
+
+////////dont forget about fixing the overflow problem for text in the home page
