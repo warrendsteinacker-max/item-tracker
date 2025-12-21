@@ -14,7 +14,7 @@ export const Epage = () => {
 
   return (
     <main>
-      <h2>Edit: {poste.name}</h2>
+      <h2>Edit Page or Searched Item: {poste.name}</h2>
       <form onSubmit={handleUpdate}>
         <label>Name:</label>
         <input 
@@ -36,7 +36,7 @@ export const Epage = () => {
         />
 
         <button type="submit">Update Changes</button>
-        <button type="button" onClick={() => navigate('/')}>Cancel</button>
+        <button type="button" onClick={() => navigate('/')}>Cancel Search</button>
       </form>
     </main>
   );
