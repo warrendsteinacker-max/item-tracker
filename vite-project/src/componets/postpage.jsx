@@ -37,9 +37,10 @@ export const Ppage = () => {
           value={post.description} 
           onChange={(e) => setPost({...post, description: e.target.value})} 
         />
-        <button type="submit">Save Post</button>
-        <button type="button" onClick={() => navigate('/')}>Cancel</button>
         </div>
+        <button type="submit" style={{  marginLeft: '10px', borderRadius: '10px', backgroundColor: '#59df0cff'}}>Save Post</button>
+        <button type="button" onClick={() => navigate('/')} style={{  marginLeft: '10px', borderRadius: '10px', backgroundColor: '#df0c0cff'}}>Cancel</button>
+  
       </form>
     </main>
   );

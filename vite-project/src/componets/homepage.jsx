@@ -24,7 +24,7 @@ export const Home = () => {
       <div style={{ marginTop: '20px' }}>
         {searchResults.length ? (
           searchResults.map((item) => (
-            <article key={item.id} style={{ border: '1px solid #242020ff', padding: '15px', borderRadius: '8px', marginBottom: '10px' }}>
+            <article key={item.id} style={{ border: '1px solid #362d2dff', padding: '15px', borderRadius: '8px', marginBottom: '10px' }}>
               <h3>{item.name} <small>(Qty: {item.count})</small></h3>
               <p>{item.description}</p>
               <button onClick={() => handleEdit(item)}>Edit</button>
