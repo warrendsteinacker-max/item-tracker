@@ -32,7 +32,7 @@ export const Home = () => {
             </article>
           ))
         ) : (
-          <p>Nothing found. Start by adding a post!</p>
+          <p style>Nothing found. Start by adding a post!</p>
         )}
       </div>
     </main>
