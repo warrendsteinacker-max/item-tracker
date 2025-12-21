@@ -25,8 +25,8 @@ export const Home = () => {
         {searchResults.length ? (
           searchResults.map((item) => (
             <article key={item.id} style={{ border: '1px solid #362d2dff', padding: '15px', borderRadius: '8px', marginBottom: '10px' }}>
-              <h3>{item.name} <small>(Qty: {item.count})</small></h3>
-              <p>{item.description}</p>
+              <h3 style={{overflow: 'hidden'}}>{item.name} <small>(Qty: {item.count})</small></h3>
+              <p style={{overflow: 'hidden'}}>{item.description}</p>
               <button onClick={() => handleEdit(item)}>Edit</button>
               <button onClick={() => del(item.id)} style={{ color: 'red', marginLeft: '10px' }}>Delete</button>
             </article>
