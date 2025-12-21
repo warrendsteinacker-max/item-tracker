@@ -41,3 +41,6 @@ export const Epage = () => {
     </main>
   );
 };
+
+
+//////dont forget to fix styleing
