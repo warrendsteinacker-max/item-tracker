@@ -31,6 +31,7 @@ export const Ppage = () => {
           value={post.count} 
           onChange={(e) => setPost({...post, count: e.target.value})} 
         />
+        <div>
         <textarea 
           placeholder="Description" 
           value={post.description} 
@@ -38,6 +39,7 @@ export const Ppage = () => {
         />
         <button type="submit">Save Post</button>
         <button type="button" onClick={() => navigate('/')}>Cancel</button>
+        </div>
       </form>
     </main>
   );
