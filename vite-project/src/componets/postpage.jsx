@@ -19,20 +19,25 @@ export const Ppage = () => {
 
   return (
     <main>
+      <div style={{borderRadius: '10px', borderWidth: 'solid black 10px'}}>
       <h2>Add New Post</h2>
+      </div>
       <form onSubmit={handleCreate}>
-        <input 
+        <input
+          style={{borderRadius: '10px'}} 
           placeholder="Name" 
           value={post.name} 
           onChange={(e) => setPost({...post, name: e.target.value})} 
         />
         <input 
+          style={{borderRadius: '10px'}}
           placeholder="Count" type="number"
           value={post.count} 
           onChange={(e) => setPost({...post, count: e.target.value})} 
         />
         <div>
-        <textarea 
+        <textarea
+          style={{borderRadius: '20px'}} 
           placeholder="Description" 
           value={post.description} 
           onChange={(e) => setPost({...post, description: e.target.value})} 
@@ -45,3 +50,7 @@ export const Ppage = () => {
     </main>
   );
 };
+
+
+
+/////made more adjustments to css on post page

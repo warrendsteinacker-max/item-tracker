@@ -65,10 +65,10 @@ textarea {
 }
 
 h2 {
-  border: 1px solid #213547;
   font-weight: bolder;
   font-style: italic;
   border-radius: 8px;
+  color: #535bf2;
 }
 
 h3 {
