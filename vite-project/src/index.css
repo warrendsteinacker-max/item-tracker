@@ -34,6 +34,7 @@ a:hover {
 
 body {
   margin: 0;
+  background-color: burlywood;
   display: flex;
   justify-content: center; /* Horizontal centering */
   align-items: center;     /* Vertical centering */
