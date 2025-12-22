@@ -14,7 +14,7 @@ function App() {
     <DataProvider>
     <BrowserRouter>
     <Routes>
-      <Route path=""></Route>
+      <Route path="/p" element={<PC />}></Route>
       <Route path="/" element={<Home />}/>
       <Route path="/ppage" element={<Ppage />}/>
       <Route path="/epage" element={<Epage />}/>
