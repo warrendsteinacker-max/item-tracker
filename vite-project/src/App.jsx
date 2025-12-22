@@ -4,6 +4,7 @@ import { Home } from './componets/homepage'
 import { Ppage } from './componets/postpage'
 import { Epage } from './componets/editpage'
 import { DataProvider } from './context'
+//import { PC } from './componets/practice'
 
 
 
@@ -14,7 +15,6 @@ function App() {
     <DataProvider>
     <BrowserRouter>
     <Routes>
-      <Route path="/p" element={<PC />}></Route>
       <Route path="/" element={<Home />}/>
       <Route path="/ppage" element={<Ppage />}/>
       <Route path="/epage" element={<Epage />}/>
@@ -27,3 +27,6 @@ function App() {
 }
 
 export default App
+
+
+ //<button onClick={() => ggp()}>go to new p page</button>

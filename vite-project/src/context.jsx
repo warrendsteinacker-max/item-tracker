@@ -19,7 +19,7 @@ export const DataProvider = ({ children }) => {
   const [search, setSearch] = useState("");
 
   /////REMEBER TO DELET THIS IS PRACTICE
-  const Dd = [{name: e, age: 5}, {name: d, age: 4}, {name: c, age: 3}, {name: b, age: 2}, {name: a, age: 1}] 
+  //const Dd = [{name: e, age: 5}, {name: d, age: 4}, {name: c, age: 3}, {name: b, age: 2}, {name: a, age: 1}] 
 
   // 2. Permanent Sync: Saves whenever 'data' changes
   useEffect(() => {
@@ -46,7 +46,7 @@ export const DataProvider = ({ children }) => {
   return (
     <DataContext.Provider 
       value={{ 
-        data, setData, post, setPost, poste, setPoste, search, Dd, setSearch,
+        data, setData, post, setPost, poste, setPoste, search, setSearch,
         searchResults, posting, del, epost 
       }}
     >

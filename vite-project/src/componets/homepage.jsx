@@ -12,6 +12,10 @@ export const Home = () => {
     navigate('/epage'); // Redirect
   };
 
+  const ggp = () => {
+    navigate('/p')
+  }
+
   return (
     <main style={{ padding: '20px' }}>
       <header style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '20px' }}>
@@ -38,3 +42,5 @@ export const Home = () => {
     </main>
   );
 };
+
+/// <button onClick={() => ggp()}>go to new p page</button>
