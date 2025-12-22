@@ -18,6 +18,8 @@ export const DataProvider = ({ children }) => {
   const [poste, setPoste] = useState({ name: '', description: '', count: 0 });
   const [search, setSearch] = useState("");
 
+  /////REMEBER TO DELET THIS IS PRACTICE
+
   // 2. Permanent Sync: Saves whenever 'data' changes
   useEffect(() => {
     localStorage.setItem("item", JSON.stringify(data));
