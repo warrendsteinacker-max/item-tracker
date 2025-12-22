@@ -33,6 +33,7 @@ export const Home = () => {
               <p style={{overflow: 'hidden'}}>{item.description}</p>
               <button onClick={() => handleEdit(item)}>Edit or Search Item</button>
               <button onClick={() => del(item.id)} style={{ color: 'red', marginLeft: '10px' }}>Delete</button>
+              <button onClick={() => ggp()}>go to new p page</button>
             </article>
           ))
         ) : (

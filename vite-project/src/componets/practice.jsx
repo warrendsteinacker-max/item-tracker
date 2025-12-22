@@ -5,14 +5,14 @@ export const PC = () => {
     const {Dd} = useContext(DataContext)
 
     return(
-        Dd.map((item) => {
-            return 
+        Dd.map((item) => (
+        
             <>
             <div>
                 <p>{item.name}</p>
                 <p>{item.age}</p>
             </div>
             </>
-        })
+        ))
     )
 }

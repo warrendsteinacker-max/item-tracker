@@ -15,7 +15,8 @@ function App() {
     <DataProvider>
     <BrowserRouter>
     <Routes>
-      <Route path="/" element={<Home Dd={Dd = [{name: e, age: 5}, {name: d, age: 4}, {name: c, age: 3}, {name: b, age: 2}, {name: a, age: 1}]} />}/>
+      <Route path="/p" element={<PC Dd={Dd = [{name: e, age: 5}, {name: d, age: 4}, {name: c, age: 3}, {name: b, age: 2}, {name: a, age: 1}]} />}/>
+      <Route path="/" element={<Home />}/>
       <Route path="/ppage" element={<Ppage />}/>
       <Route path="/epage" element={<Epage />}/>
       <Route path="*" element={<h1>Page not found</h1>}/>
