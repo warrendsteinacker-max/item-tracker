@@ -9,13 +9,13 @@ div{
   height: 20px;
   background-color: aqua;
   justify-content: center;
-  margin: auto 0;
+  margin-left: 100px;
 }
 
 #pr{
   align-content: center;
   color: rgb(32, 30, 28);
-  margin-left: 50px;
+  margin-left: 100px;
 }
 
 #FF{

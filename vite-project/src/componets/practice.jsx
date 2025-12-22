@@ -4,14 +4,15 @@ import { DataContext } from "../context";
 export const PC = ({Dd}) => {
 
     return(
-        Dd.map((item) => (
+        <div>
+        <div style={{backgroundColor: 'red'}} ></div>
+        {Dd.map((item, index) => (
         
-            <>
-            <div id="pr">
+            <div key={index} id="pr">
                 <p id="prac">{item.name}</p>
                 <p id="prac">{item.age}</p>
             </div>
-            </>
-        ))
-    )
+        ))}
+        </div>
+    );
 }
