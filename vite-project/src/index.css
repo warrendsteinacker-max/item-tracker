@@ -4,6 +4,15 @@ div{
   border-width: 20px;
 }
 
+#prac{
+  background-color: aqua;
+  align-content: left;
+}
+
+#pr{
+  color: chocolate;
+}
+
 #FF{
   border-radius: 0%;
 }
