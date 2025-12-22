@@ -5,7 +5,7 @@ export const PC = ({Dd}) => {
 
     return(
         <div>
-        <div style={{backgroundColor: 'red', width: '10px', height: '50px'}} >iiiiiiiiii</div>
+        <div style={{backgroundColor: 'red', width: '150px', height: '150px'}} ></div>
         {Dd.map((item, index) => (
         
             <div key={index} id="pr">
