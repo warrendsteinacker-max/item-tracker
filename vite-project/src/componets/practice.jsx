@@ -7,9 +7,9 @@ export const PC = ({Dd}) => {
         Dd.map((item) => (
         
             <>
-            <div className="pr">
-                <p className="prac">{item.name}</p>
-                <p className="prac">{item.age}</p>
+            <div id="pr">
+                <p id="prac">{item.name}</p>
+                <p id="prac">{item.age}</p>
             </div>
             </>
         ))
