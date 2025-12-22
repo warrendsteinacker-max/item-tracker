@@ -5,12 +5,14 @@ div{
 }
 
 #prac{
+  width: 50px;
+  height: 20px;
   background-color: aqua;
-  align-content: left;
+  align-content: center;
 }
 
 #pr{
-  color: chocolate;
+  color: rgb(32, 30, 28);
 }
 
 #FF{
