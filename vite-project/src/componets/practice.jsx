@@ -1,8 +1,7 @@
 import React, {useContext} from "react";
 import { DataContext } from "../context";
 
-export const PC = () => {
-    const {Dd} = useContext(DataContext)
+export const PC = ({Dd}) => {
 
     return(
         Dd.map((item) => (
