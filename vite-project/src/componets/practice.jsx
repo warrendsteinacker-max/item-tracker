@@ -1,6 +1,6 @@
 import React, {useContext} from "react";
 import { DataContext } from "../context";
-import { box } from "./box";
+import { Box } from "./box";
 import { Link } from "react-router-dom";
 
 export const PC = ({Dd}) => {
@@ -14,7 +14,7 @@ export const PC = ({Dd}) => {
             <div key={index} id="pr">
                 <p id="prac">{item.name}</p>
                 <p id="prac">{item.age}</p>
-                <Link to='/pp/:item.id' id="link">got to id</Link>
+                <Link to={`/pp/${item.id}`} id="link">got to id</Link>
             </div>
         ))}
         </div>

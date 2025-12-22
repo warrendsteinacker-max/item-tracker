@@ -1,7 +1,9 @@
 import { useParams } from "react-router-dom"
 
 
-export const box = () => {
+export const Box = () => {
+
+    const {id} = useParams();
     
-    return
+    return(<p>Hello person of id {id}</p>)
 }
