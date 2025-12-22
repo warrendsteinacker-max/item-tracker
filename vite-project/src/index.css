@@ -22,7 +22,9 @@ div{
   border-radius: 0%;
 }
 
-
+#Link{
+  color: red;
+}
 
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;

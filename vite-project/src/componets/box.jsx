@@ -1,3 +1,7 @@
+import { useParams } from "react-router-dom"
+
+
 export const box = () => {
-    <div style={{backgroundColor: 'blue', textAlign: 'center'}}>Hello!!!!!!!!!!</div>
+    
+    return
 }
