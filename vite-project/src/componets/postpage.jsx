@@ -37,7 +37,7 @@ export const Ppage = () => {
         />
         <div>
         <textarea
-          style={{borderRadius: '20px'}} 
+          style={{borderRadius: '10px'}} 
           placeholder="Description" 
           value={post.description} 
           onChange={(e) => setPost({...post, description: e.target.value})} 

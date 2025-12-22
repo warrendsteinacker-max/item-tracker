@@ -35,8 +35,8 @@ export const Epage = () => {
           onChange={(e) => setPoste({...poste, description: e.target.value})} 
         />
 
-        <button type="submit" style={{boarderRadius: '10px', marginLeft: '10px', backgroundColor: 'green'}}>Update Changes</button>
-        <button type="button" style={{marginLeft: '10px', backgroundColor: 'red'}} onClick={() => navigate('/')}>Cancel Search</button>
+        <button type="submit" style={{borderRadius: '10px', marginLeft: '10px', backgroundColor: 'green'}}>Update Changes</button>
+        <button type="button" style={{borderRadius: '10px', marginLeft: '10px', backgroundColor: 'red'}} onClick={() => navigate('/')}>Cancel Search</button>
       </form>
     </main>
   );
