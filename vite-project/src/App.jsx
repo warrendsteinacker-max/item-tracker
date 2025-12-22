@@ -5,6 +5,7 @@ import { Ppage } from './componets/postpage'
 import { Epage } from './componets/editpage'
 import { DataProvider } from './context'
 import { PC } from './componets/practice'
+import { box } from './componets/box'
 
 ///got it
 
@@ -15,7 +16,8 @@ function App() {
     <DataProvider>
     <BrowserRouter>
     <Routes>
-      <Route path="/p" element={<PC Dd={[{name: 'e', age: 5}, {name: 'd', age: 4}, {name: 'c', age: 3}, {name: 'b', age: 2}, {name: 'a', age: 1}]} />}/>
+      <Route path="/pp/:item.id" element={<box />}></Route>
+      <Route path="/p" element={<PC Dd={[{name: 'e', age: 5, id: 55}, {name: 'd', age: 4, id: 56}, {name: 'c', age: 3, id: 57}, {name: 'b', age: 2, id: 58}, {name: 'a', age: 1, id: 59}]} />}/>
       <Route path="/" element={<Home />}/>
       <Route path="/ppage" element={<Ppage />}/>
       <Route path="/epage" element={<Epage />}/>
