@@ -18,12 +18,14 @@ export const Epage = () => {
       <form onSubmit={handleUpdate}>
         <label>Name:</label>
         <input 
+          styles={{borderRadius: '10px'}}
           value={poste.name} 
           onChange={(e) => setPoste({...poste, name: e.target.value})} 
         />
         
         <label>Count:</label>
         <input 
+          styles={{borderRadius: '10px'}}
           type="number" 
           value={poste.count} 
           onChange={(e) => setPoste({...poste, count: e.target.value})} 
@@ -31,6 +33,7 @@ export const Epage = () => {
 
         <label>Description:</label>
         <textarea 
+          styles={{borderRadius: '10px'}}
           value={poste.description} 
           onChange={(e) => setPoste({...poste, description: e.target.value})} 
         />
