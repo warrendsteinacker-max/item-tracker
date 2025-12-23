@@ -17,6 +17,8 @@ export const DataProvider = ({ children }) => {
   const [post, setPost] = useState({ name: '', description: '', count: 0 });
   const [poste, setPoste] = useState({ name: '', description: '', count: 0 });
   const [search, setSearch] = useState("");
+  const [userd, setuSearch] = useState("");
+  
 
   /////REMEBER TO DELET THIS IS PRACTICE
   //const Dd = [{name: e, age: 5}, {name: d, age: 4}, {name: c, age: 3}, {name: b, age: 2}, {name: a, age: 1}] 
