@@ -18,7 +18,8 @@ export const DataProvider = ({ children }) => {
   const [poste, setPoste] = useState({ name: '', description: '', count: 0 });
   const [search, setSearch] = useState("");
   const [userd, setuSearch] = useState("");
-  
+  const [userddB, setudbSearch] = useState(false);
+
 
   /////REMEBER TO DELET THIS IS PRACTICE
   //const Dd = [{name: e, age: 5}, {name: d, age: 4}, {name: c, age: 3}, {name: b, age: 2}, {name: a, age: 1}] 
@@ -27,6 +28,16 @@ export const DataProvider = ({ children }) => {
   useEffect(() => {
     localStorage.setItem("item", JSON.stringify(data));
   }, [data]);
+
+  useEffect(() => { 
+
+      const startdebounce = () => {
+        setTimeout(() => {
+          
+        }, 10000).then(() => {}).catch((error) => {console.error(error.message)})
+      }
+    
+  }, [userd]);
 
   const posting = (newpost) => {
     setData([...data, newpost]);
