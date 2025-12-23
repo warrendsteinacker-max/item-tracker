@@ -10,8 +10,15 @@ export class C extends React.Component {
         const {data} = this.props
         const [count, setCount] = useState(data.count)
         const price = 1
-        const priceofc = data.count*price
+        const priceofc = count*price
 
+        const inc = () => {
+            setCount((count) => count + 1)
+        }
+
+        const dec = () => {
+            setCount((count) => count - 1)
+        }
 
         return(
             <>
@@ -24,4 +31,4 @@ export class C extends React.Component {
             </>
         )
     }
-}  clear
+} 
