@@ -33,10 +33,11 @@ export const DataProvider = ({ children }) => {
 
       const startdebounce = () => {
         setTimeout(() => {
-          
-        }, 10000).then(() => {}).catch((error) => {console.error(error.message)})
+          setudbSearch(true)
+        }, 10000).then(() => {setudbSearch(false)}).catch((error) => {console.error(error.message)})
       }
-    
+      
+      startdebounce()
   }, [userd]);
 
   const posting = (newpost) => {
