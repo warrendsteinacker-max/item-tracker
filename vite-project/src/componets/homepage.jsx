@@ -34,6 +34,7 @@ export const Home = () => {
               <button onClick={() => handleEdit(item)}>Edit or Search Item</button>
               <button onClick={() => del(item.id)} style={{ color: 'red', marginLeft: '10px' }}>Delete</button>
               <button onClick={() => ggp()}>go to new p page</button>
+              <Link to="/ps">got to C page</Link>
             </article>
           ))
         ) : (

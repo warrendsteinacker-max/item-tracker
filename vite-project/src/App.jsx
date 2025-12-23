@@ -11,7 +11,7 @@ import { Box } from './componets/box'
 
 function App() {
 
-const data = {count: 0, item: apple}
+const data = {count: 0, item: 'apple'}
 
   return (
     <>
