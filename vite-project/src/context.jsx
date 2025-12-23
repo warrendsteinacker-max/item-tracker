@@ -18,7 +18,7 @@ export const DataProvider = ({ children }) => {
   const [poste, setPoste] = useState({ name: '', description: '', count: 0 });
   const [search, setSearch] = useState("");
   const [userd, setuSearch] = useState("");
-  const [userddB, setudbSearch] = useState(false);
+  const [userddB, setudSearch] = useState(false);
 
 
   /////REMEBER TO DELET THIS IS PRACTICE
@@ -31,11 +31,19 @@ export const DataProvider = ({ children }) => {
 
   useEffect(() => { 
 
-      const startdebounce = () => {
-        setTimeout(() => {
-          setudbSearch(true)
-        }, 10000).then(() => {setudbSearch(false)}).catch((error) => {console.error(error.message)})
-      }
+        const startdebounce = () => {
+          try{
+            setTimeout(() => {
+              setudSearch(true)
+            }, 10000)
+          }
+          catch(error){
+            console.error(error.message)
+          }
+          finally{
+            setudSearch(false)
+          }
+        }
       
       startdebounce()
   }, [userd]);
