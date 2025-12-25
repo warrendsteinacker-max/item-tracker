@@ -3,7 +3,18 @@ import React, {useState} from "react";
 
 
 export class C extends React.Component {
-    
+    constructor(props) {
+        super(props);
+        this.state = this.props.data.count;
+    };
+
+    inc = () => {
+        this.setState(() => )
+    }
+
+    dec = () => {
+
+    }
 
     render(){
 
@@ -12,13 +23,6 @@ export class C extends React.Component {
         const price = 1
         const priceofc = count*price
 
-        const inc = () => {
-            setCount((count) => count + 1)
-        }
-
-        const dec = () => {
-            setCount((count) => count - 1)
-        }
 
         return(
             <>
@@ -26,7 +30,7 @@ export class C extends React.Component {
                 <div>number of {data.item} is {count}</div>
                 <div>price is {priceofc}$</div>
                 <button onClick={()=>inc()}></button>
-                <button onClick={()=>dec()}></button>
+                <button onClick={this.dec()}></button>
             </div>
             </>
         )
