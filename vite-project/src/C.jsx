@@ -4,7 +4,7 @@ import React from "react";
 export class C extends React.Component {
     
 /// may not need to define constructer
-
+///fixed it
     state = {
         count: 0
     }
