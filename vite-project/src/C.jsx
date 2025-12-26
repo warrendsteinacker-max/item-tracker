@@ -5,9 +5,8 @@ export class C extends React.Component {
     
 /// may not need to define constructer
 
-    constructor(props){
-        super(props);
-        this.state = 0; // initial count from props
+    state = {
+        count: 0
     }
 
     inc = () => {
