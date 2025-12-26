@@ -11,14 +11,14 @@ import { Box } from './componets/box'
 
 function App() {
 
-const data = {count: 0, item: 'apple'}
+
 
   return (
     <>
     <DataProvider>
     <BrowserRouter>
     <Routes>
-      <Route path="/ps" element={<C data={data}/>}/>
+      <Route path="/ps" element={<C />}/>
       <Route path="/pp/:id" element={<Box />}></Route>
       <Route path="/p" element={<PC Dd={[{name: 'e', age: 5, id: 55}, {name: 'd', age: 4, id: 56}, {name: 'c', age: 3, id: 57}, {name: 'b', age: 2, id: 58}, {name: 'a', age: 1, id: 59}]} />}/>
       <Route path="/" element={<Home />}/>
