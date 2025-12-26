@@ -6,7 +6,7 @@ import { Epage } from './componets/editpage'
 import { DataProvider } from './context'
 import { PC } from './componets/practice'
 import { Box } from './componets/box'
-import { C } from './componets/cpage'
+import { C } from './componets/C'
 
 ///got it
 
