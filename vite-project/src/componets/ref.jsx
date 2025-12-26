@@ -65,3 +65,17 @@ export const Ref = () => {
         />
     );
 };
+
+
+/////adding more notes
+const evenNumbersinRange = useMemo(() => {
+    for (let i = startingp; i <= endingP; i++) {
+        if (i % 2 === 0) {
+            return i;
+        }
+    }
+}, [startingp, endingP]);
+
+const percentOfEvenNumbersInRange = useCallback(() => {
+    return evenNumbersinRange / totalNumbers * 100;
+}, [evenNumbersinRange, totalNumbers]);
