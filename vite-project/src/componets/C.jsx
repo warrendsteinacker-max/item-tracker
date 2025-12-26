@@ -1,5 +1,14 @@
 import React from "react";
 
+class CC extends React.PureComponent { 
+    render() {
+                    <div>
+                <h3>{this.props.count}</h3>
+                <button onClick={()=>this.props.inc()}></button>
+                <button onClick={()=>this.props.dec()}></button>
+            </div> }
+}
+
 ///
 export class C extends React.Component {
     
@@ -23,11 +32,7 @@ export class C extends React.Component {
 
         return(
             <>
-            <div>
-                <h3>{this.state.count}</h3>
-                <button onClick={()=>this.inc()}></button>
-                <button onClick={()=>this.dec()}></button>
-            </div>
+            <CC count={this.state.count} inc={this.inc} dec={this.dec}/>
             </>
         )
     }
