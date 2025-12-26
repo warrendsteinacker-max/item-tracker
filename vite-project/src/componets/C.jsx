@@ -2,11 +2,14 @@ import React from "react";
 
 class CC extends React.PureComponent { 
     render() {
-                    <div>
+        return(
+            <div>
                 <h3>{this.props.count}</h3>
                 <button onClick={()=>this.props.inc()}></button>
                 <button onClick={()=>this.props.dec()}></button>
-            </div> }
+            </div> )
+            
+        }
 }
 
 ///
