@@ -10,11 +10,11 @@ export class C extends React.Component {
     }
 
     inc = () => {
-        this.setState(() => this.state + 1)
+        this.setState(() => ({ count: this.state.count + 1 }))
     }
 
     dec = () => {
-        this.setState(() => this.state - 1)
+        this.setState(() => ({ count: this.state.count - 1 }))
     }
 
     render(){
@@ -24,7 +24,7 @@ export class C extends React.Component {
         return(
             <>
             <div>
-                <h3>{this.state}</h3>
+                <h3>{this.state.count}</h3>
                 <button onClick={()=>this.inc()}></button>
                 <button onClick={()=>this.dec()}></button>
             </div>
