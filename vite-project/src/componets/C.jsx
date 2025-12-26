@@ -6,7 +6,7 @@ export class C extends React.Component {
 /// may not need to define constructer
 ///fixed it
     state = {
-        count: 0
+        count: this.props.data.
     }
 
     inc = () => {
