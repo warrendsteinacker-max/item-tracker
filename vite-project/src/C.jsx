@@ -1,19 +1,20 @@
 import React from "react";
 import React, {useState} from "react";
 
-
+///
 export class C extends React.Component {
     constructor(props) {
         super(props);
-        this.state = this.props.data.count;
+        this.state = 0;
     };
+/// may not need to define constructer
 
     inc = () => {
-        this.setState(() => )
+        this.setState(() => this.state + 1)
     }
 
     dec = () => {
-
+        this.setState(() => this.state - 1)
     }
 
     render(){
