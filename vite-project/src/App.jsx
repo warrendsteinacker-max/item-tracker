@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useContext } from 'react'
 import {BrowserRouter, Route, Routes, useNavigate} from 'react-router-dom'
 import { Home } from './componets/homepage'
 import { Ppage } from './componets/postpage'
@@ -12,14 +12,14 @@ import { C } from './componets/C'
 
 function App() {
 
-
+const {data} = useContext(DataProvider)
 
   return (
     <>
     <DataProvider>
     <BrowserRouter>
     <Routes>
-      <Route path="/ps" element={<C />}/>
+      <Route path="/ps" element={<C data={data}/>}/>
       <Route path="/pp/:id" element={<Box />}></Route>
       <Route path="/p" element={<PC Dd={[{name: 'e', age: 5, id: 55}, {name: 'd', age: 4, id: 56}, {name: 'c', age: 3, id: 57}, {name: 'b', age: 2, id: 58}, {name: 'a', age: 1, id: 59}]} />}/>
       <Route path="/" element={<Home />}/>
