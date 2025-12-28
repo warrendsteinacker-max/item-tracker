@@ -6,8 +6,6 @@ import { Epage } from './componets/editpage'
 import { DataProvider } from './context'
 
 
-///got it
-
 function App() {
 
 
@@ -31,4 +29,3 @@ function App() {
 export default App
 
 
- //<button onClick={() => ggp()}>go to new p page</button>
