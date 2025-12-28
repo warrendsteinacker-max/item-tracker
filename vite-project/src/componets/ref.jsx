@@ -138,6 +138,34 @@ const ff = () => {
 }
 
 
+
+const addf = () => {
+
+    
+
+    for(let i = 0; i < 1000000000; i++) {}
+
+    for(let j = 0; j < 1000000000; j++) {}
+
+    for(let k = 0; k < 1000000000; k++) {}
+
+    for(let l = 0; l < 1000000000; l++) {}
+
+    for(let m = 0; m < 1000000000; m++) {}
+
+    for(let n = 0; n < 1000000000; n++) {}
+
+    for(let o = 0; o < 1000000000; o++) {}  
+
+    for(let p = 0; p < 1000000000; p++) {}
+
+    for(let q = 0; q < 1000000000; q++) {}
+
+    for(let r = 0; r < 1000000000; r++) {}
+}
+
+
+
 const memoizer = (fn) => {
     let cache = {};
 
