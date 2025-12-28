@@ -79,3 +79,11 @@ const evenNumbersinRange = useMemo(() => {
 const percentOfEvenNumbersInRange = useCallback(() => {
     return evenNumbersinRange / totalNumbers * 100;
 }, [evenNumbersinRange, totalNumbers]);
+
+
+const st = (index) => {
+
+    for (let i = 0; i < 1000000000; i++) {
+        a[i] === i*i
+    }
+}
