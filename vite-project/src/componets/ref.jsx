@@ -127,10 +127,56 @@ const ff = () => {
         v.push(a * b);
     }
 
-    function getv() {
-        return v;
+    function getcalc() {
+        for(let i = 0; i < v.length; i++) {
+            console.log(v[i] + v[v.length - 1 - i]);
+        }
     }
 
-    return { add, sub, mul, getv };
+    return { add, sub, mul, getcalc };
+
+}
+
+
+const memoizer = (fn) => {
+    let cache = {};
+
+    return function(...args) {}
+
+}
+
+
+const encap = () => {
+
+    const ff = () => {
+    let v = [];
+
+    function div(a, b) {
+        v.push(a / b);
+    }
+
+    function add(a, b) {
+        v.push(a + b);
+    }
+
+    function sub(a, b) {
+        v.push(a - b);
+    }
+
+    function mul(a, b) {
+        v.push(a * b);
+    }
+
+    function getcalc() {
+        for(let i = 0; i < v.length; i++) {
+            console.log(v[i] + v[v.length - 1 - i]);
+        }
+    }
+
+    return { add, sub, mul, getcalc };
+
+}
+
+return ff();
 
 }
