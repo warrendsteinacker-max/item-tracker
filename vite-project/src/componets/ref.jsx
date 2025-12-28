@@ -109,3 +109,28 @@ console.timeEnd();
 console.time();
 console.log(st(99999999));
 console.timeEnd();
+
+
+
+const ff = () => {
+    let v = [];
+
+    function add(a, b) {
+        v.push(a + b);
+    }
+
+    function sub(a, b) {
+        v.push(a - b);
+    }
+
+    function mul(a, b) {
+        v.push(a * b);
+    }
+
+    function getv() {
+        return v;
+    }
+
+    return { add, sub, mul, getv };
+
+}
