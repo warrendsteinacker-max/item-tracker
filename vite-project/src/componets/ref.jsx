@@ -142,55 +142,60 @@ const ff = () => {
 const addf = () => {
 
     let ii = [];
-    let jj = [];
-    let kk = [];
-    let ll = [];
-    let mm = [];
-    let nn = [];
-    let oo = [];
-    let pp = [];
-    let qq = [];
-    let rr = [];
+    let iii = [];
+
 
     for(let i = 0; i < 1000000000; i++) {
         ii[i] = i + 0;
     }
 
-    for(let j = 0; j < 1000000000; j++) {
-        jj[j] = j + 1;
+    for(let i = 0; i < 1000000000; i++) {
+        ii[i + 1] = i + 1;
     }
 
-    for(let k = 0; k < 1000000000; k++) {
-        kk[k] = k + 2;
+    for(let i = 0; i < 1000000000; i++) {
+        ii[i + 2] = i + 2;
     }
 
-    for(let l = 0; l < 1000000000; l++) {
-        ll[l] = l + 3;
+    for(let i = 0; i < 1000000000; i++) {
+        ii[i + 3] = i + 3;
     }
 
-    for(let m = 0; m < 1000000000; m++) {
-        mm[m] = m + 4;
+    for(let i = 0; i < 1000000000; i++) {
+        ii[i + 4] = i + 4;
     }
 
-    for(let n = 0; n < 1000000000; n++) {
-        nn[n] = n + 5;
+    for(let i = 0; i < 1000000000; i++) {
+        ii[i + 5] = i + 5;
     }
 
-    for(let o = 0; o < 1000000000; o++) {
-        oo[o] = o + 6;
-    }  
-
-    for(let p = 0; p < 1000000000; p++) {
-        pp[p] = p + 7;
+    for(let i = 0; i < 1000000000; i++) {
+        ii[i + 6] = i + 6;
     }
 
-    for(let q = 0; q < 1000000000; q++) {
-        qq[q] = q + 8;
+    for(let i = 0; i < 1000000000; i++) {
+        ii[i + 7] = i + 7;
     }
 
-    for(let r = 0; r < 1000000000; r++) {
-        rr[r] = r + 9;
+    for(let i = 0; i < 1000000000; i++) {
+        ii[i + 8] = i + 8;
     }
+
+    for(let i = 0; i < 1000000000; i++) {
+        ii[i + 9] = i + 9;
+    }
+
+
+    function addd(a, b) {
+       iii.push(ii[a] + ii[b]);
+    }
+
+    function getcalc() {
+    for(let i = 0; i < iii.length; i++) {
+    console.log(iii[i] + iii[iii.length - 1 - i]);
+        }
+    } 
+    return { addd, getcalc };
 }
 
 
