@@ -82,8 +82,30 @@ const percentOfEvenNumbersInRange = useCallback(() => {
 
 
 const st = (index) => {
-
+    let a = [];
     for (let i = 0; i < 1000000000; i++) {
-        a[i] === i*i
+        a[i] = i*i
+    }
+    return a[index];
+}
+
+
+
+const stt = () => {
+    let b = [];
+    for (let i = 0; i < 1000000000; i++) {
+        b[i] = i*i
+    }
+    return function(index) {
+        return b[index];
     }
 }
+
+const c = stt();
+
+console.time();
+console.log(c(99999999));
+console.timeEnd();
+console.time();
+console.log(st(99999999));
+console.timeEnd();
