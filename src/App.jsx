@@ -1,5 +1,5 @@
 import { useState, useEffect, useContext } from 'react'
-import {BrowserRouter, Route, Routes, useNavigate} from 'react-router-dom'
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import { Home } from './componets/homepage'
 import { Ppage } from './componets/postpage'
 import { Epage } from './componets/editpage'
@@ -13,14 +13,14 @@ function App() {
   return (
     <>
     <DataProvider>
-    <BrowserRouter>
+    <Router>
     <Routes>
       <Route path="/" element={<Home />}/>
       <Route path="/ppage" element={<Ppage />}/>
       <Route path="/epage" element={<Epage />}/>
       <Route path="*" element={<h1>Page not found</h1>}/>
     </Routes>
-    </BrowserRouter>
+    </Router>
     </DataProvider>
     </>
   )
