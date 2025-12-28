@@ -16,7 +16,7 @@ export const Ppage = () => {
     setPost({ name: '', description: '', count: 0 }); // Clear form
     navigate('/');
   };
-
+///
   return (
     <main>
       <div style={{borderRadius: '10px', borderWidth: 'solid black 10px'}}>
