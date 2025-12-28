@@ -141,27 +141,56 @@ const ff = () => {
 
 const addf = () => {
 
-    
+    let ii = [];
+    let jj = [];
+    let kk = [];
+    let ll = [];
+    let mm = [];
+    let nn = [];
+    let oo = [];
+    let pp = [];
+    let qq = [];
+    let rr = [];
 
-    for(let i = 0; i < 1000000000; i++) {}
+    for(let i = 0; i < 1000000000; i++) {
+        ii[i] = i + 0;
+    }
 
-    for(let j = 0; j < 1000000000; j++) {}
+    for(let j = 0; j < 1000000000; j++) {
+        jj[j] = j + 1;
+    }
 
-    for(let k = 0; k < 1000000000; k++) {}
+    for(let k = 0; k < 1000000000; k++) {
+        kk[k] = k + 2;
+    }
 
-    for(let l = 0; l < 1000000000; l++) {}
+    for(let l = 0; l < 1000000000; l++) {
+        ll[l] = l + 3;
+    }
 
-    for(let m = 0; m < 1000000000; m++) {}
+    for(let m = 0; m < 1000000000; m++) {
+        mm[m] = m + 4;
+    }
 
-    for(let n = 0; n < 1000000000; n++) {}
+    for(let n = 0; n < 1000000000; n++) {
+        nn[n] = n + 5;
+    }
 
-    for(let o = 0; o < 1000000000; o++) {}  
+    for(let o = 0; o < 1000000000; o++) {
+        oo[o] = o + 6;
+    }  
 
-    for(let p = 0; p < 1000000000; p++) {}
+    for(let p = 0; p < 1000000000; p++) {
+        pp[p] = p + 7;
+    }
 
-    for(let q = 0; q < 1000000000; q++) {}
+    for(let q = 0; q < 1000000000; q++) {
+        qq[q] = q + 8;
+    }
 
-    for(let r = 0; r < 1000000000; r++) {}
+    for(let r = 0; r < 1000000000; r++) {
+        rr[r] = r + 9;
+    }
 }
 
 
